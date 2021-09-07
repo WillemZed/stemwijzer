@@ -1,0 +1,45 @@
+body {
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+}
+.hidden {
+    display: none;
+}
+.remember-btn {
+    border: solid 2px gray;
+    background-color: #008ad0 !important;
+}
+
+.homeContainer {
+    margin-left: 44px;
+}
+
+.statementContainer {
+    margin-left: 44px;
+    padding-bottom: 50px;
+}
+
+.resultContainer {
+    margin-left: 44px;
+    padding-bottom: 50px;
+}
+
+.backDiv {
+
+}
+#previousBtn {
+    width: 50px;
+    height: 50px;
+}
+
+#previousBtn:hover {
+    cursor: pointer;
+}
+
+#startBtn {
+    background-color: yellow;
+}

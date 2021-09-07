@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stemwijzer</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+</head>
+<body>
+    <div class="container">
+
+        <div class=backDiv>
+            <img src="back.png" id="previousBtn" class="hidden"></img>
+        </div>
+
+        <div class="homeLogo">
+            <img src="stemwijzer-logo.png" alt="logo">
+        </div>
+
+        <div class="homeContainer">
+
+            <div id="intro">
+                <h1>
+                    Tweede kamer verkiezingen stemwijzer
+                </h1>
+            </div>
+
+            <div id="start">
+                <button id="startBtn" class="btn btn-warning">Start</button>
+            </div>
+
+        </div>
+
+        <div class="statementContainer">
+
+            <div id="container" class="hidden">
+                <h1 id="title">Title</h1>
+                <p id="statement">Statement</p>
+            </div>
+
+            <br>
+
+            <div id="choiceBtn" class="hidden">
+                <button id="pro" class="btn btn-dark">Eens</button>
+                <button id="contra" class="btn btn-dark">Oneens</button>
+                <button id="none" class="btn btn-dark">Geen van beide</button>
+                <button id="nextBtn" class="btn btn-dark" class="hidden">Sla deze vraag over</button>
+                <p class="partyCheckbox">Laat dit ondewerp zwaarder meetellen</p>
+                <input class="checkboxInput" id="important" type="checkbox">
+            </div>
+
+        </div>
+
+            
+
+        <div class=resultContainer>
+
+            <div id="checkResults" class="hidden">
+                <button id="showResults" class="">Bekijk resultaat</button>
+                <div class="filterButton">
+                    <button id="secular" class="filterButton-button">Selecteer zittende partijen</button>
+                    <button id="all" class="filterButton-button">Selecteer alle partijen</button>
+                    <button id="big" class="filterButton-button">Selecteer de grote partijen</button>
+                </div>     
+            </div>
+
+            <div id="uitslagen" class="hidden">
+                <h3>Uitslagen stemwijzer</h3>
+                <h4 id="partijen"></h4>
+                <h3><a class="btn btn-primary" id="home">Stemwijzer opnieuw doen? Klik hier</a></h3>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+    <script src="parties.js"></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/3df4c7171e.js" crossorigin="anonymous"></script>
+</html>
