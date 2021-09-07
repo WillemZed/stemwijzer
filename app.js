@@ -284,7 +284,7 @@ function displayPartyResults(){
         var percentage = 100 / (subjects.length + x) * party.points;
 
         var p = percentage.toFixed(0);
-            partijen.innerHTML+=party.name + " " + p + "%" + "</br>";   
+            partijen.innerHTML+=party.name + ": " + p + "%" + "</br>" + "</br>";   
         console.log(p)
     });
 }
